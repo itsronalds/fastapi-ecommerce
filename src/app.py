@@ -8,6 +8,9 @@ from fastapi.responses import FileResponse
 # FastAPI routes
 from src.routes import router
 
+from src.db.session import get_db
+get_db()
+
 app = FastAPI()
 
 
