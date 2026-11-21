@@ -20,7 +20,5 @@ def get_db() -> Iterator[Session]:
     db = SessionLocal()
     try:
         yield db
-    except:
-        logger.debug(msg='ERROR DE CONEXION')
     finally:
         db.close()
