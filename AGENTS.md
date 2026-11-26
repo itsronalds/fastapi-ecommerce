@@ -1,7 +1,5 @@
 # AGENTS.md — FastAPI E-commerce API
 
-Guía principal para agentes de IA y desarrolladores que trabajan en `fastapi-ecommerce`.
-
 ## Stack
 
 - **Lenguaje:** Python 3.11+
@@ -9,31 +7,6 @@ Guía principal para agentes de IA y desarrolladores que trabajan en `fastapi-ec
 - **Validación y configuración:** Pydantic v2 + `pydantic-settings`
 - **ORM:** SQLAlchemy 2.x
 - **Base de datos:** PostgreSQL (`psycopg` 3)
-
-## Comandos esenciales
-
-```bash
-# Crear y activar entorno virtual (Linux/macOS)
-python3 -m venv venv
-source venv/bin/activate
-
-# Instalar dependencias
-pip install -r requirements.txt
-
-# Configurar variables de entorno
-cp .env.example .env
-# Editar .env con un DATABASE_URL válido de PostgreSQL
-
-# Crear tablas en la base de datos
-python -m src.db.init_db
-
-# Ejecutar servidor de desarrollo
-python main.py
-# Alternativa con uvicorn directo:
-uvicorn src.app:app --host 127.0.0.1 --port 8001 --reload
-```
-
-Documentación interactiva disponible en `/docs` (Swagger UI) y `/redoc`.
 
 ## Reglas del proyecto
 
