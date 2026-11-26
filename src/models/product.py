@@ -21,7 +21,7 @@ class Product(Base):
     price = Column(Numeric(10, 2), nullable=False)
     stock = Column(Integer, nullable=False, default=0)
     is_active = Column(Boolean, nullable=False, default=True)
-    category_id = Column(Integer, ForeignKey('categories.id'), index=True)
+    category_id = Column(Integer, ForeignKey('categories.id'), nullable=False, index=True)
 
     # Traer registro de la categoria a la que pertenece el producto
     category = relationship('Category')
