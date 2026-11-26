@@ -110,3 +110,6 @@ Todas las rutas de órdenes requieren que el usuario esté autenticado con JWT:
   - > **Importante:** todo debe ocurrir en la misma transacción. Si algún producto falla o no tiene stock, no se guarda la orden ni se modifica el stock.
 - **`GET /orders`:** lista las órdenes del usuario autenticado (si el usuario es `admin`, puede ver todas).
 - **`GET /orders/{id}`:** muestra el detalle de una orden con sus `items` (solo el dueño de la orden o un `admin` pueden verla).
+
+## Arquitectura de base de datos
+<img width="1131" height="807" alt="fastapi-ecommerce" src="https://github.com/user-attachments/assets/a17ae947-009a-45a4-ae10-ce59eac78b9c" />
